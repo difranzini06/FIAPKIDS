@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuário</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://arcoirisbrinquedos.com.br/wp-content/uploads/2015/06/criancas-brincando-arco-iris-brinquedos.jpg'); /* Substitua pelo URL da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 300px; /* Ajuste o tamanho conforme necessário */
+            position: relative;
+        }
+
+        .login-container h2 {
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: auto; /* Centraliza o botão */
+        }
+
+        .login-container .back-link {
+            position: absolute;
+            top: 1px;
+            left: 20px; /* Ajuste para a esquerda */
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <a href="/" class="back-link">&larr;</a>
+        <h2>Cadastrar Usuário</h2>
+        <form action="/cadastrousuario" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
